@@ -1,0 +1,181 @@
+# .gitignore - Production-ready for Shopify Product Automation Tool
+# Keep this file tracked in the repository.
+
+#########################
+# Environment / Secrets
+#########################
+# Ignore dotenv files and any env variants that may contain secrets
+.env
+.env.*
+.env.local
+.env.*.local
+.envrc
+
+#########################
+# Python
+#########################
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# Type checking / caches
+.mypy_cache/
+.pyre/
+.cache/
+__pypackages__/
+
+#########################
+# Node / JavaScript
+#########################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# Uncomment if you prefer to ignore lockfiles (usually tracked):
+# package-lock.json
+# yarn.lock
+
+#########################
+# Generated outputs & artifacts
+#########################
+# Generated product and image artifacts
+outputs/
+output/
+outputs_products/
+outputs_images/
+images/
+images_generated/
+generated_images/
+
+# Local databases / caches
+*.sqlite3
+*.db
+*.db-journal
+
+# Build artifacts
+out/
+release/
+
+#########################
+# Logs & temp files
+#########################
+*.log
+logs/
+log/
+failed_log.txt
+failed_products.txt
+*.tmp
+*.temp
+*.bak
+*.swp
+*.pid
+*.seed
+
+#########################
+# Credentials, keys, and sensitive files
+#########################
+# Private keys and certs
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.jks
+*.der
+
+# SSH keys and netrc
+.ssh/
+id_rsa
+id_rsa.pub
+id_dsa
+id_ecdsa
+id_ed25519
+.netrc
+
+# Cloud provider credentials
+.aws/
+.aws/credentials
+.gcloud/
+.azure/
+.credentials/
+secrets.env
+secrets.json
+*.secret
+*.enc
+*.p12
+.htpasswd
+
+#########################
+# IDEs / Editors
+#########################
+# VS Code
+.vscode/
+.history/
+# JetBrains
+.idea/
+*.iml
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+#########################
+# Operating system files
+#########################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+#########################
+# Misc / temporary helpers
+#########################
+*.swp
+*.swo
+*.swn
+.cache/
+tmp/
+temp/
+
+#########################
+# Templates & examples (keep templates tracked, ignore real secrets)
+#########################
+.env.example
+.env.template
+
+# End of .gitignore
